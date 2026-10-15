@@ -1,0 +1,14 @@
+[Unit]
+Description=React Application
+After=network.target
+
+[Service]
+Type=simple
+User=reactuser
+WorkingDirectory=/home/reactuser/react-app
+ExecStart=/home/reactuser/react-app/node_modules/.bin/serve dist -l 3000
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
