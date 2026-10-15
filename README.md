@@ -1,4 +1,3 @@
-# devop-homework-01
 
 High Availability React Application Infrastructure deployed with Vagrant, HAProxy, Keepalived, and Systemd.
 
